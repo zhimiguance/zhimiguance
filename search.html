@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search搜索站</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta charset="UTF-8">
+    <style>
+      #body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f1f1f1;
+      }
+      #search-box {
+        margin: 100px auto;
+        width: 50%;
+        text-align: center;
+      }
+      #search-input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+      }
+      #search-engine {
+        margin-top: 10px;
+		background-color: #635265;
+		color: #ffffff;
+		border: none;
+		padding: 10px 20px;
+		font-size: 16px;
+		border-radius: 5px;
+		cursor: pointer;
+      }
+	  #search-button {
+		background-color: #3a98ff;
+		color: #ffffff;
+		border: none;
+		padding: 10px 20px;
+		font-size: 16px;
+		border-radius: 5px;
+		cursor: pointer;
+      }
+	  
+    </style>
+  </head>
+  <body>
+    <div id="search-box">
+      <input id="search-input" type="text" placeholder="在此输入搜索内容..." />
+      <br />
+      <select id="search-engine">
+        <option value="https://cn.bing.com/search?q=" selected>必应</option>
+        <option value="https://www.baidu.com/s?wd=">百度</option>
+        <option value="https://m.sm.cn/s?q=">神马</option>
+        <option value="https://www.so.com/s?q=">360</option>
+        <option value="https://www.sogou.com/web?query=">搜狗</option>
+        <option value="https://www.google.com/search?q=">谷歌</option>
+        <option value="https://search.yahoo.com/search?p=">雅虎</option>
+      </select>
+      <button id="search-button">搜索</button>
+    </div>
+    <script>
+      var searchButton = document.getElementById('search-button');
+      var searchInput = document.getElementById('search-input');
+      var searchEngine = document.getElementById('search-engine');
+
+      // 从 localStorage 中获取搜索引擎设置
+      var savedEngine = localStorage.getItem('search-engine');
+      if (savedEngine) {
+        searchEngine.value = savedEngine;
+      }
+
+      searchButton.onclick = function() {
+        if (searchInput.value) {
+          var url = searchEngine.value + searchInput.value;
+          window.open(url, '_blank');
+        }
+      };
+
+      // 保存搜索引擎设置到 localStorage
+      searchEngine.onchange = function() {
+        localStorage.setItem('search-engine', searchEngine.value);
+      };
+    </script>
+  </body>
+</html>

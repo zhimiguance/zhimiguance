@@ -14,17 +14,20 @@
             box-shadow: 8px 8px 4px #888888;
             border-radius: 6px;/* 圆形弧度 */
             padding: 10px;
-            min-width: 130px;/* 方框最小宽度 */
-            max-width: 300px;/* 方框最高宽度 */
-            margin: 11px 0 0 0.8%;/* 外边距的宽度 */
+            min-width: 120px;/* 方框最小宽度 */
+            max-width: 200px;/* 方框最高宽度 */
+			max-height: 20px;
+            margin: 0 0.8% 1.8% 0.8%;/* 外边距的宽度 */
             float: left;/* 左浮动 */
             overflow: hidden;/* 内容溢出处理 */
+			white-space: nowrap; /* 添加此行，强制文本在一行内显示，超出部分隐藏 */
+			text-overflow: ellipsis;
             transition: all .3s;/* 过度效果 */
             color: cadetblue;
         }
         .wp-block-pullquote{
             margin:0 0 1em;
-			padding:3em 0;
+			padding:1em 0;
 			text-align:center;
 			overflow-wrap:break-word;
 			box-sizing:border-box;
@@ -37,6 +40,7 @@
         .normal-text{
             margin:0 0 1em;padding:0em 0;overflow-wrap:break-word;box-sizing:border-box;border-style:none;color: cadetblue;
         }
+		
         .normal-text-txt-small{
             font-size: small;
         }
@@ -66,15 +70,11 @@
         }
 		#j001 {
 			margin-top: 10px;
-			margin-bottom: 10px;
+			margin-bottom: 0px;
 		}
 		#j002 {
-			margin-bottom: 500px;
-		}
-		#j003 {
-			position: fixed;
-			text-align: center;
-			bottom: 0;
+			margin-top: 10px;
+			margin-bottom: 0px;
 		}
     </style>
 
@@ -87,56 +87,144 @@
     <!-- 设置标签 -->
     <figure class="wp-block-pullquote">
             <blockquote>
-                <p>洞察无常，解脱痛苦，无苦则甜</p><cite>人心惟危，道心惟微，惟精惟一，允执厥中。夫大道冲虚，幽微寂寞，不可以心会，不可以言诠。"五蕴"象征着自我对世界的认知基础。"皆空"提醒我们，五蕴都是无常的。洞察和理解无常即可消除痛苦，达到内心的平静和解脱，无苦则甜。</cite>
+                <p>洞察无常，解脱痛苦，无苦则甜</p>
             </blockquote>
     </figure>
 </div>
 
 <!-- 设置文本 -->
 <div id="j002">
-	<!-- 设置网页 -->
-	<figure class="wp-block-pullquote">
+	<figure class=".wp-block-pullquote">
 			<blockquote>
-			
-                <a target='_blank' href='https://cn.bing.com/'><div class='item'><div class='no-logo'>必应搜索</div></div></a>
+				<a target='_blank' href='https://cn.bing.com/'><div class='item'><div class='no-logo'>必应搜索</div></div></a>
 				<a target='_blank' href='https://www.baidu.com/'><div class='item'><div class='no-logo'>百度搜索</div></div></a>
-				<a target='_blank' href='https://kaifa.baidu.com/'><div class='item'><div class='no-logo'>百度开发搜索</div></div></a>
-				<a target='_blank' href='https://v1.mblue.ltd/itools/onnotst-master/src/search.html'><div class='item'><div class='no-logo'>执简搜索</div></div></a>
-				<a target='_blank' href='https://sso.ctwing.cn/'><div class='item'><div class='no-logo hidelight'>电信AEP管理(ctwing)</div></div></a>
-				<a target='_blank' href='http://www.shanghaikent.com:8999/kent/'><div class='item'><div class='no-logo hidelight'>APP后台管理(外)</div></div></a>
-				<a target='_blank' href='http://172.16.0.28:8999/kent/'><div class='item'><div class='no-logo hight2light'>APP后台管理(内)</div></div></a>
-				<a target='_blank' href='https://v1.mblue.ltd/itools/kent-master/src/KentApp.html'><div class='item'><div class='no-logo hight2light'>APP下载站</div></div></a>
-				<a target='_blank' href='http://172.16.0.25:8018/realtime/'><div class='item'><div class='no-logo hight2light'>本地水表信息查询</div></div></a>
-				<a target='_blank' href='https://bpmhome.shanghaikent.com:16688/modules/uwf/portal/default'><div class='item'><div class='no-logo hight2light'>BPM平台登录</div></div></a>
-				<a target='_blank' href='http://172.16.0.89:18604/Login'><div class='item'><div class='no-logo hight2light'>本地NB漏损管理平台</div></div></a>
-				<a target='_blank' href='http://172.16.0.92:19004/login'><div class='item'><div class='no-logo hight2light'>本地4G备份管理平台</div></div></a>
-				<a target='_blank' href='http://192.168.88.6:5000/?source=en&target=zh&q='><div class='item'><div class='no-logo hight2light'>办公电脑翻译</div></div></a>
-                <a target='_blank' href='https://v1.mblue.ltd/itools/kent-master/src/KentWork.html'><div class='item'><div class='no-logo hight2light'>工作站</div></div></a>
-                <a target='_blank' href='https://v1.mblue.ltd/itools/kent-master/src/KentTools.html'><div class='item'><div class='no-logo hight2light'>工具站</div></div></a>
-                <a target='_blank' href='https://yiyan.baidu.com/'><div class='item'><div class='no-logo'>文心一言</div></div></a>
-                <a target='_blank' href='https://element-plus.org/zh-CN/#/zh-CN'><div class='item'><div class='no-logo hight3light'>Vue3</div></div></a>
-				<a target='_blank' href='https://www.qingyunl.com/'><div class='item'><div class='no-logo'>轻云互联</div></div></a>
-				<a target='_blank' href='https://cloud.aiwnet.cn/'><div class='item'><div class='no-logo'>爱微云</div></div></a>
-				<a target='_blank' href='https://mp.weixin.qq.com/?token=&lang=zh_CN'><div class='item'><div class='no-logo'>微信小程序</div></div></a>
-				<a target='_blank' href='https://beian.miit.gov.cn/#/Integrated/index'><div class='item'><div class='no-logo'>IPC备案查询</div></div></a>
-				<a target='_blank' href='https://lbs.amap.com/'><div class='item'><div class='no-logo'>高德地图API</div></div></a>
-				<a target='_blank' href='https://www.huaweicloud.com/'><div class='item'><div class='no-logo'>华为云</div></div></a>
-				<a target='_blank' href='https://cloud.tencent.com/'><div class='item'><div class='no-logo hight3light'>腾讯云</div></div></a>
-				<a target='_blank' href='https://www.pgyer.com/'><div class='item'><div class='no-logo'>蒲公英</div></div></a>
-				<a target='_blank' href='https://www.betaqr.com.cn/'><div class='item'><div class='no-logo'>FIR.RM</div></div></a>
-				<a target='_blank' href='https://yun.mblue.ltd/'><div class='item'><div class='no-logo hight3light'>我的位置</div></div></a>
-				<a target='_blank' href='https://yun.mblue.ltd/admin'><div class='item'><div class='no-logo hight3light'>我的数据</div></div></a>
-				<a target='_blank' href='https://sydh.mblue.ltd/'><div class='item'><div class='no-logo hight3light'>私域对话</div></div></a>
-				<a target='_blank' href='https://v1.mblue.ltd/'><div class='item'><div class='no-logo hight3light'>v1</div></div></a>
-				<a target='_blank' href='https://v2.mblue.ltd/'><div class='item'><div class='no-logo hight3light'>v2</div></div></a>
-				<!-- 执迷观测 onnotst onnotst@163.com Howtomakemoney1. -->
-				<a target='_blank' href='https://zmgc.mblue.ltd/wordpress/'><div class='item'><div class='no-logo hight5light'>执迷观测-爱微云</div></div></a>
-				<!-- 执迷观测 onnotst onnotst@163.com Howtomakemoney1. -->
-				<a target='_blank' href='https://zmgc.mblue.ltd/wordpress/wp-admin'><div class='item'><div class='no-logo hight5light'>执迷观测-爱微云-登陆</div></div></a>
-				
+				<a target='_blank' href='https://kaifa.baidu.com/'><div class='item'><div class='no-logo'>百度搜索+</div></div></a>
+				<a target='_blank' href='https://git.mblue.ltd/search.html'><div class='item'><div class='no-logo'>执简搜索</div></div></a>
+				<a target='_blank' href='http://www.shanghaikent.com:8999/kent/'><div class='item'><div class='no-logo hight2light'>APP后台管理</div></div></a>
+				<a target='_blank' href='http://172.16.0.28:8999/kent/'><div class='item'><div class='no-logo hight2light'>APP后台管理(内部)</div></div></a>
+				<a target='_blank' href='http://172.16.0.25:8018/realtime/'><div class='item'><div class='no-logo'>本地水表信息查询(内部)</div></div></a>
+				<a target='_blank' href='https://bpmhome.shanghaikent.com:16688/modules/uwf/portal/default'><div class='item'><div class='no-logo hight2light'>BPM平台登录(内部)</div></div></a>
+				<a target='_blank' href='http://172.16.0.89:18604/Login'><div class='item'><div class='no-logo'>本地NB漏损管理平台(内部)</div></div></a>
+				<a target='_blank' href='http://172.16.0.92:19004/login'><div class='item'><div class='no-logo'>本地4G备份管理平台(内部)</div></div></a>
+				<a target='_blank' href='https://sso.ctwing.cn/'><div class='item'><div class='no-logo hight2light'>电信AEP管理(ctwing)</div></div></a>
+				<a target='_blank' href='https://git.mblue.ltd/KentWork.html'><div class='item'><div class='no-logo hight3light'>工作站</div></div></a>
+                <a target='_blank' href='https://git.mblue.ltd/KentTools.html'><div class='item'><div class='no-logo hight3light'>工具站</div></div></a>
+				<a target='_blank' href='https://git.mblue.ltd/KentApp.html'><div class='item'><div class='no-logo hight3light'>APP下载站</div></div></a>
 			</blockquote>
 	</figure>
 </div>
-
+<div style="clear: both;"></div> <!-- 添加一个额外的 <div> 来清除浮动 -->
+<div id="j001">
+    <figure class="wp-block-pullquote">
+            <blockquote>
+                <p>清净自在，永恒追求，不追凡尘，生生死死，理知平静</p>
+            </blockquote>
+    </figure>
+</div>
+<div id="j002">
+	<figure class=".wp-block-pullquote">
+			<blockquote>
+				<a target='_blank' href='https://zmgc.mblue.ltd'>
+					<div class='item'>
+						<div class='no-logo'>执迷观测</div>
+					</div>
+				</a>
+				<a target='_blank' href='https://zmgc.mblue.ltd/wp-admin'>
+					<div class='item'>
+						<div class='no-logo'>执迷登录</div>
+					</div>
+				</a>
+				<a target='_blank' href='https://sydh.mblue.ltd'>
+					<div class='item'>
+						<div class='no-logo'>私域对话</div>
+					</div>
+				</a>
+				<a target='_blank' href='https://sydh.mblue.ltd/zb_system/cmd.php?act=login'>
+					<div class='item'>
+						<div class='no-logo'>私域登录</div>
+					</div>
+				</a>
+				<a target='_blank' href='https://git.mblue.ltd/'>
+					<div class='item'>
+						<div class='no-logo'>导航站点</div>
+					</div>
+				</a>
+				<a target='_blank' href='https://v1.mblue.ltd/'>
+					<div class='item'>
+						<div class='no-logo'>导航备份</div>
+					</div>
+				</a>
+				<a target='_blank' href='https://git.mblue.ltd/search'>
+					<div class='item'>
+						<div class='no-logo'>自定搜索</div>
+					</div>
+				</a>
+				<a target='_blank' href='http://118.195.250.118/'>
+					<div class='item'>
+						<div class='no-logo'>天命错觉</div>
+					</div>
+				</a>
+				<a target='_blank' href='http://118.195.250.118/admin'>
+					<div class='item'>
+						<div class='no-logo'>天命登录</div>
+					</div>
+				</a>
+				<a target='_blank' href='http://118.195.250.118/my/loc'>
+					<div class='item'>
+						<div class='no-logo'>我的位置</div>
+					</div>
+				</a>
+				<a target='_blank' href='http://118.195.250.118/my/loc/put.php'>
+					<div class='item'>
+						<div class='no-logo'>添加位置</div>
+					</div>
+				</a>
+				<a target='_blank' href='http://118.195.250.118/my/sql'>
+					<div class='item'>
+						<div class='no-logo'>数据管理</div>
+					</div>
+				</a>
+			</blockquote>
+	</figure>
+</div>
+<div style="clear: both;"></div> <!-- 添加一个额外的 <div> 来清除浮动 -->
+<div id="j001">
+	<figure class="wp-block-pullquote">
+			<blockquote>
+				<p>人心惟危，道心惟微，惟精惟一，允执厥中。夫大道冲虚，幽微寂寞，不可以心会，不可以言诠。</p>
+			</blockquote>
+	</figure>
+</div>
+<div id="j002">
+	<figure class=".wp-block-pullquote">
+			<blockquote>
+				<a target='_blank' href='https://element-plus.org/zh-CN/#/zh-CN'><div class='item'><div class='no-logo'>Vue3中文文档</div></div></a>
+				<a target='_blank' href='https://www.qingyunl.com/'><div class='item'><div class='no-logo'>轻云互联</div></div></a>
+				<a target='_blank' href='https://cloud.aiwnet.cn/'><div class='item'><div class='no-logo'>爱微云</div></div></a>
+				<a target='_blank' href='https://lbs.amap.com/'><div class='item'><div class='no-logo'>高德地图API</div></div></a>
+				<a target='_blank' href='https://cloud.tencent.com/'><div class='item'><div class='no-logo'>腾讯云</div></div></a>
+				<a target='_blank' href='https://www.pgyer.com/'><div class='item'><div class='no-logo'>蒲公英</div></div></a>
+				<a target='_blank' href='https://www.betaqr.com.cn/'><div class='item'><div class='no-logo'>FIR.RM</div></div></a>
+				<a target='_blank' href='https://www.shanghaikent.com/'><div class='item'><div class='no-logo'>上海肯特</div></div></a>
+				<a target='_blank' href='https://www.bt.cn/'><div class='item'><div class='no-logo'>宝塔面板</div></div></a>
+				<a target='_blank' href='https://www.xp.cn/'><div class='item'><div class='no-logo'>小皮面板</div></div></a>
+				<a target='_blank' href='https://dictionary.cambridge.org/zhs/translate/'><div class='item'><div class='no-logo'>剑桥翻译</div></div></a>
+				<a target='_blank' href='https://niutrans.com/trans?type=text'><div class='item'><div class='no-logo'>小牛翻译</div></div></a>
+				<a target='_blank' href='https://fanyi.qq.com/'><div class='item'><div class='no-logo hight3light'>腾讯翻译</div></div></a>
+				<a target='_blank' href='https://wordpress.com/zh-cn/'><div class='item'><div class='no-logo'>WordPress</div></div></a>
+				<a target='_blank' href='https://typecho.org/'><div class='item'><div class='no-logo'>Typecho</div></div></a>
+				<a target='_blank' href='https://www.zblogcn.com/'><div class='item'><div class='no-logo'>Zblog</div></div></a>
+				<a target='_blank' href='https://github.com/'><div class='item'><div class='no-logo'>GitHub</div></div></a>
+			</blockquote>
+	</figure>
+</div>
+<div style="clear: both;"></div> <!-- 添加一个额外的 <div> 来清除浮动 -->
+	<div id="j001">
+		<figure class="wp-block-pullquote">
+				<blockquote>
+					<p>"五蕴"象征着自我对世界的认知基础。"皆空"提醒我们，五蕴都是无常的。洞察和理解无常即可消除痛苦，达到内心的平静和解脱。</p>
+				</blockquote>
+		</figure>
+	</div>
 </body>
 </html>
